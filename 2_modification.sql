@@ -7,12 +7,12 @@ alter table enseigne
     add primary key (c_id, p_id);
 
 -- ajouter le domaine d'enseignement de chaque professeur.
-ALTER TABLE professeur
-    ADD COLUMN domaine VARCHAR(100) NOT NULL DEFAULT 'general';
+alter table professeur
+    add column domaine VARCHAR(100) NOT NULL DEFAULT 'general';
 
 -- Ajouter le genre de chaque eleve.
-ALTER TABLE `élève`
-    ADD COLUMN genre VARCHAR(20) NOT NULL DEFAULT 'non precise';
+alter table `élève`
+    add column genre VARCHAR(20) NOT NULL DEFAULT 'non precise';
 
 -- Un professeur peut diriger au maximum une maison.
 -- p_id est NULL si la maison n'a pas encore de directeur.
